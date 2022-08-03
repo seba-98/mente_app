@@ -1,0 +1,74 @@
+.accordion{
+    max-width: 100%;
+    margin: 50px 0;
+    z-index: 1;
+}
+.accordion__container{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion__label{
+    min-width: 200px;
+    max-width: 800px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid $grey-100;
+    font-weight: bold;
+    color: $grey-600;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+.accordion__label__span{
+    margin: 0 5px;
+}
+
+.accordion__container__content{
+    position: relative;
+    padding: 9px;
+    height: 0;
+    color: white;
+    transition: 0.5s;
+    overflow-y: hidden;
+    justify-content: space-around;
+    
+}
+.accordion__ol{
+    font-size: 10px;
+}
+.active-faq{
+    align-items: center;
+    font-weight: lighter;
+    color: $grey-800;
+    height: 200px;
+    padding: 10px;
+}
+
+.bienestar__logo{
+    width: 150px;
+}
+
+@media screen and (min-width:530px){
+    .accordion__label{
+        font-size: 16px;
+        width: 450px;
+    }
+    .accordion__ol{
+        font-size: 16px;
+    }
+    .bienestar__logo{
+        width: 200px;
+    }
+}
+@media screen and (min-width:1000px){
+    .accordion__label{
+        font-size: 24px;
+        width: 800px !important;
+    }
+    .accordion__ol{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,82 @@
+@import '../_variables.scss';
+
+.sideMenu{
+    position: fixed;
+    background-color: $white-color;
+    border-radius: 10px;
+    top: 20px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 600px;
+    padding-left: 20px;
+    box-shadow: 2px 2px 3px $grey-400;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    z-index: 1000;
+}
+
+.sideMenu__ul{
+    list-style: none;
+    width: 90%;
+}
+.sideMenu__li{
+    margin: 10px 0 10px 0;
+}
+.sideMenu__cross{
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+.cross__content{
+    height: 20px;
+
+}
+.sideMenu__search__input{
+    height: 30px;
+    width: 200px;
+    background-color: $white-color;
+    border: 1px solid $grey-200;
+    border-radius: 3px;
+}
+
+.sideMenu__search{
+   flex-direction: row;
+}
+
+.sideMenu__search__button{
+    background-color: $purple-color;
+    border: none;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.sideMenu__link{
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+li>span{
+    font-size: 16px;
+    font-weight: 600;
+    color: $grey-800;
+}
+
+.sideMenu__embarazo{
+    flex-direction: column;
+}
+
+.h3--purple{
+    color: $purple-color;
+    font-size: 24px;
+}
+
+
+@media screen and (min-width:800px){
+    .sideMenu__search{
+        display: none !important;
+    }
+}

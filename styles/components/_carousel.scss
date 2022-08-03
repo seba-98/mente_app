@@ -1,0 +1,45 @@
+
+
+.side__controls{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel__next, .carousel__prev {
+    background: transparent;
+    border: none;
+    color: $grey-200;
+    font-size: 35px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.bottom__controls{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__buttons{
+    margin: 0 20px 0 20px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: $grey-200;
+    border: none;
+    cursor: pointer;
+}
+
+.active--btn{
+    background-color: $grey-500 !important;
+}
+
+@media screen and (min-width:800px){
+    .carousel__buttons{
+        width: 20px;
+        height: 20px;
+    }
+}

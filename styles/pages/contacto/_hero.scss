@@ -1,0 +1,37 @@
+.contact__hero{
+    height: 150px;
+    margin: 5px 0 50px 0;
+    width: 100%;
+}
+
+.contact__hero__img{
+    width: 98%;
+    height: 150px;
+    background-image: url(../../../public/hero-images/contacto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0px 30% 10px 30%;
+}
+
+@media screen and (min-width:380px) {
+    .contact__hero{
+        height:160px ;
+    }
+    .contact__hero__img{
+        width: 98%;
+        height: 100%;
+    }
+}
+@media screen and (min-width:480px) { .contact__hero{ height:220px ;}  .contact__hero__img{ padding: 0px 30% 20px 10%; }  }
+@media screen and (min-width:660px) { .contact__hero{ height:300px ;}}
+@media screen and (min-width:830px) { .contact__hero{ height:380px ;}}
+@media screen and (min-width:900px) { .contact__hero{ height:420px ;}}
+@media screen and (min-width:1000px) { .contact__hero{ height:480px ;}}
+@media screen and (min-width:1100px) { .contact__hero{ height:520px ;}}
+@media screen and (min-width:1600px) { .contact__hero{ height: 700px !important;}}

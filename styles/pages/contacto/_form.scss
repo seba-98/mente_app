@@ -1,0 +1,43 @@
+.contact__from{
+    flex-direction: column;
+    margin: 80px 50px;
+}
+
+.contact__label{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    color: $purple-color;
+}
+
+.contact__input, .contact_text__area{
+    background-color: white !important;
+    border-radius: 5px;
+    border: 1px solid $grey-100;
+    width: 100%;
+}
+
+.contact__input{
+    padding: 5px;
+    height: 32px;
+    margin: 15px 0;
+}
+
+.contact__input::placeholder{
+    color: $grey-300;
+}
+.contact__input::-ms-input-placeholder{
+    color: $grey-300;
+}
+.contact_text__area{
+    min-height: 160px;
+}
+.btn--send{
+    width: 100%;
+    margin: 40px;
+}
+
+
+@media screen {
+    
+}

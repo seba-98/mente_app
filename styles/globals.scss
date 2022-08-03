@@ -1,0 +1,133 @@
+@import './components/main.scss';
+@import './pages/main.scss';
+@import '_variables.scss';
+
+
+/*==================GLOBAL DEFAULT STYLES=====================*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: black;
+    background: white;
+  }
+}
+
+/*==================GLOBAL CUSTOM STYLES=====================*/
+.d-flex{
+  display: flex;
+}
+.d-center{
+  justify-content: center;
+  align-items: center;
+}
+.border--divider{
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $grey-200;
+}
+
+.btn__span--pink{
+  height: 100%;
+  text-align: center;
+  margin-right: 12px;
+}
+.btn--pink{
+  background-color: $pink-color;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 9px;
+  height: 34px;
+  width: auto;
+  padding: 0 8px 0 8px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 15px;
+}
+.btn__span--pruple{
+  height: 100%;
+  text-align: center;
+}
+.btn--purple{
+  background-color: $purple-color;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 13px;
+  height: 34px;
+  width: auto;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+
+.section--margin{
+  margin: 100px 20px 100px 20px;
+}
+.display-none{
+  display: none;
+}
+
+@media screen and (min-width:400px) { 
+
+  .btn--pink{
+    font-size: 10px;
+    padding: 0 17px 0 17px;
+  }
+
+}
+@media screen and (min-width:830px) { 
+  .section--margin{
+    margin: 100px 80px 100px 80px;
+  }
+  .btn--pink{
+    font-weight: bold;
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    width: auto;
+    padding: 0 20px 0 20px;
+  } 
+}
+
+
+/*==================GLOBAL CUSTOM ANIMATION=====================*/
+@keyframes fadeIn {
+  0% {opacity: 0;} 
+  100% {opacity: 1;}
+} 
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.fadeIn {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
