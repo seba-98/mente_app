@@ -23,10 +23,10 @@ export const MainLayout:FC<Props> = ({children, title, descripcion, imageUrl}) =
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-      <SidebarMenu />
-      <Navbar />
-        {children}
+      <main className='fadeIn'>
+        <SidebarMenu />
+        <Navbar />
+          {children}
       </main>
       <Footer />
     </>

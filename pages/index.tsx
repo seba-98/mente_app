@@ -1,10 +1,30 @@
 import type { NextPage } from 'next'
+import { useEffect, useState } from 'react'
 import { MainLayout } from '../components/layouts'
 import { Crianza, Desiciones, Hero, Salud } from '../components/PageComponents/home'
 import { Carousel } from '../components/ui'
+import { FullScreenLoading } from '../components/ui/FullScreenLoading'
 import { Publicidad } from '../components/ui/icons'
 
 const Home: NextPage = () => {
+
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    const loadPage=()=>{
+      setTimeout(()=>{
+        setLoaded(true)
+      },2000)
+    }
+    loadPage()
+    
+  }, [setLoaded])
+  
+
+  if(!loaded)return(
+    <FullScreenLoading />
+  )
+
   return (
     <MainLayout title='Home - La mente es maravillosa' descripcion='Bienvenidos a La mente es maravillosa'>
       <>
@@ -28,9 +48,9 @@ const Home: NextPage = () => {
           <Desiciones />
         </section>
 
-        <aside className='publicidad__content d-flex d-center'>
+        <section className='publicidad__content d-flex d-center'>
           <Publicidad />
-        </aside>
+        </section>
       </>
     </MainLayout>
   )

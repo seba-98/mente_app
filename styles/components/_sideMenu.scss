@@ -3,7 +3,6 @@
 .sideMenu{
     position: fixed;
     background-color: $white-color;
-    border-radius: 10px;
     top: 20px;
     right: 0;
     left: 0;
@@ -24,6 +23,7 @@
 }
 .sideMenu__li{
     margin: 10px 0 10px 0;
+    cursor: pointer;
 }
 .sideMenu__cross{
     cursor: pointer;
@@ -80,3 +80,28 @@ li>span{
         display: none !important;
     }
 }
+
+
+.hover__animation--underline {
+    display: inline-block;
+    position: relative;
+    color: $purple-color;
+  }
+  
+  .hover__animation--underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $purple-color;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover__animation--underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

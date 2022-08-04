@@ -17,3 +17,4 @@ export * from './Bienestar';
 export * from './FooterLogo';
 export * from './FooterSeparator';
 export * from './Publicidad';
+export * from './NewsLetter';
