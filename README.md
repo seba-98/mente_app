@@ -1,6 +1,5 @@
-## Aplicación creada en Next.js
+## Aplicación creada en Next.js | la app utiliza el gestor de paquetes pnpm 
 
-## La app utiliza el gestor de paquetes pnpm 
 
 ## Para poder utilizar la app instalar los módulos 
 ```bash o cmd
@@ -28,7 +27,8 @@ La app utiliza:
     -typescript.
     -sass.
     -context.
-    -AOS (librería de animaciones).
+    -AOS (librería de animaciones scroll).
+    -Animate.css.
     -Los estilos se dividen por página y por componentes dentro de la carpeta styles cada sección posee un archivo main .scss
      que exporta componentes scss al archivo main.scss de mayor jerarquía el último de estos archivos es exportado a la carpeta
      globals la cual se importa en pages/_app.tsx.
