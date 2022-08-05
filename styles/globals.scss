@@ -16,7 +16,7 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: source-sans-pro, sans-serif;
 }
 
 input:focus, textarea:focus{
@@ -24,6 +24,9 @@ input:focus, textarea:focus{
 }
 textarea{
   resize: none;
+}
+button{
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -99,14 +102,15 @@ textarea{
   cursor: pointer;
 }
 
-
-
-
 .section--margin{
   margin: 100px 20px 100px 20px;
 }
 .display-none{
   display: none !important;
+}
+
+.text--important{
+  color: $pink-color;
 }
 
 @media screen and (min-width:400px) { 
@@ -139,6 +143,8 @@ textarea{
 }
 
 
+
+
 /*==================GLOBAL CUSTOM ANIMATION=====================*/
 @keyframes fadeIn {
   0% {opacity: 0;} 
@@ -159,11 +165,10 @@ textarea{
   animation-name: fadeIn;
 }
 
-
 .item--hover:hover{
 
-  transform: translateY(-8px);
-  transform: scale(20px, 20px);
+  // transform: translateY(-8px);
+  transform: scale(1.2);
 
   &{
     transition: all 0.4s ease;

@@ -35,6 +35,10 @@
     display: flex;
     justify-content: center;
 }
+.logo__svg{
+    cursor: pointer;
+
+}
 .navbar__li--search{
     margin: 20px;
     display: none;
@@ -42,7 +46,6 @@
     width: 60px;
     height: 60px;
 }
-
 .search__nav{
     position:fixed;
     left: 70%;
@@ -55,7 +58,6 @@
         display: block;
         cursor: pointer;
     }
-    
     .search__nav{
         visibility:visible;
     }

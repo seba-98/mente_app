@@ -125,50 +125,76 @@ const Contact:NextPage = () => {
         </header>
 
         <form 
-        className="contact__form d-flex d-center" 
-        onSubmit={onSubmit} 
-        autoComplete='off'
-        noValidate
+          className="contact__form d-flex d-center" 
+          onSubmit={onSubmit} 
+          autoComplete='off'
+          noValidate
         >
             <h1 className='contact__label d-flex d-center'>¡Hola! Contactanos a traves de el formulario. </h1>
             <input
-             type="text"
-             name="name"
-             onFocus={()=>{setInputErr({...inputErr, nameErr:''})}}
-             placeholder='Nombre y apellido'  
-             className={`contact__input ${nameErr  && 'input--err'}`} 
-             value={name}
-             onChange={setValues}
+              type="text"
+              name="name"
+              onFocus={()=>{setInputErr({...inputErr, nameErr:''})}}
+              placeholder='Nombre y apellido'  
+              className={`contact__input ${nameErr  && 'input--err'}`} 
+              value={name}
+              onChange={setValues}
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in"
              />
              {nameErr  !=='' && <span className='chip--err'>{nameErr}</span>}
             <input
-             type="email" 
-             name="email" 
-             onFocus={()=>{setInputErr({...inputErr, emailErr:''})}}
-             placeholder='Correo electrónico' 
-             className={`contact__input ${emailErr && 'input--err'}`} 
-             value={email}
-             onChange={setValues}
+              type="email" 
+              name="email" 
+              onFocus={()=>{setInputErr({...inputErr, emailErr:''})}}
+              placeholder='Correo electrónico' 
+              className={`contact__input ${emailErr && 'input--err'}`} 
+              value={email}
+              onChange={setValues}
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in"
              />
              {emailErr  !=='' && <span className='chip--err'>{emailErr}</span>}
 
             <h3 className='contact__label d-flex d-center'>¡Cuentanos mas acerca de ti! </h3>
             <textarea 
-            name="message" 
-            onFocus={()=>{setInputErr({...inputErr, messageErr:''})}}
-            value={message}
-            onChange={setValues}
-            className={`contact__text__area ${messageErr && 'input--err'}`}  />
+              name="message" 
+              onFocus={()=>{setInputErr({...inputErr, messageErr:''})}}
+              value={message}
+              onChange={setValues}
+              className={`contact__text__area ${messageErr && 'input--err'}`}  
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in"
+            />
+
             {messageErr  !=='' && <span className='chip--err'>{messageErr}</span>}
              
-            <div className="btn--send d-flex">
+            <div 
+              className="btn--send d-flex"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in"
+            >
                 <button className='btn--purple d-flex' type='submit'>
                     <span className='btn__span--purple d-flex d-center'>Enviar !</span>
                 </button>
             </div>
         </form>
 
-        <section className='newsletter__container d-flex'>
+        <section 
+          className='newsletter__container d-flex'
+          data-aos="zoom-in-down"
+          data-aos-delay="50"
+          data-aos-duration="500"
+          data-aos-easing="ease-in"
+        >
           <NewsLetter />
           <div className='news__info'>
               <h3 className='news__title1'>Title1</h3>

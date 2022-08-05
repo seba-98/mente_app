@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import { UiContext } from '../../context/ContextUi';
 import { Burger, Logo, Search } from './icons'
+import { useRouter } from 'next/router';
 
 export const Navbar = () => {
 
   const {toggleSidebar, toggleSearch, search}=useContext(UiContext);
+
 
   const handleSearch=()=>{
     if(search === 'animate__fadeInRight') {
@@ -19,7 +21,7 @@ export const Navbar = () => {
               <li className='navbar__li--burger' onClick={()=>toggleSidebar('animate__fadeInLeft')}>
                 <Burger width={30} height={30}/>
               </li>
-              <li className='navbar__li--logo'>
+              <li className='navbar__li--logo' >
                 <Logo height={80} width={160} />
               </li>
               <li className={`sideMenu__li search__nav d-flex animate__animated ${search}`}  >

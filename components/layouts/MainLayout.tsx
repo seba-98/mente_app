@@ -4,6 +4,7 @@ import { SidebarMenu } from '../ui';
 import { Footer } from '../ui/Footer';
 import { Navbar } from '../ui/Navbar';
 import { UiContext } from '../../context/ContextUi';
+import aos from 'aos';
 
 interface Props{
   title:string,
@@ -14,11 +15,14 @@ interface Props{
 
 export const MainLayout:FC<Props> = ({children, title, descripcion, imageUrl}) => {
 
+
   const {toggleSearch, toggleSidebar} = useContext(UiContext);
   
   useEffect(() => {
     toggleSidebar('display-none');
     toggleSearch('display-none');
+    aos.init();
+    
   }, [])
   
 

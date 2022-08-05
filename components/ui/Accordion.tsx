@@ -18,10 +18,15 @@ export const Accordion = () => {
         {
             items.map((a)=>(
                 
-                <div className="accordion__container" key={a} > 
-                    <div 
-                    className="accordion__label" 
-                    onClick={()=> onClick(a, active) }>
+                <div 
+                className="accordion__container" 
+                key={a} 
+                data-aos="flip-down"
+                data-aos-delay="50"
+                data-aos-duration="500"
+                data-aos-easing="ease-in"
+                > 
+                    <div className="accordion__label" onClick={()=> onClick(a, active) }>
                     {a}
                     <span className='accordion__label__span d-flex d-center'>{a === active ? '▼' : '►'}</span>
                     </div>
