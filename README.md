@@ -1,6 +1,6 @@
 ## Aplicación creada en Next.js
 
-## La app utiliza el gestor de paquetes pnpm (igual que funciona igual que npm pero es mas eficiente)
+## La app utiliza el gestor de paquetes pnpm 
 
 ## Para poder utilizar la app instalar los módulos 
 ```bash o cmd
