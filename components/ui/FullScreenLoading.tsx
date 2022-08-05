@@ -5,11 +5,6 @@ import { MainLayout } from '../layouts/MainLayout';
 
 interface Props{
     quantity?:number
-    // width:{
-    //     xs:number;
-    //     sm:number;
-    //     lg:number;
-    // }
 }
 
 export const FullScreenLoading:FC<Props> = ({quantity=10}) => {

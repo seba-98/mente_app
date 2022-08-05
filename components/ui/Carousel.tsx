@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Testimonio2, Testimonio3, Testimonio, Testimonio4 } from './icons';
 
 export const Carousel = () => {
 
     const images = [
-        <Testimonio  />,
-        <Testimonio2  />,
-        <Testimonio3  />,
-        <Testimonio4  />,
+        <Testimonio key={1} />,
+        <Testimonio2 key={2} />,
+        <Testimonio3 key={3} />,
+        <Testimonio4 key={4} />,
     ]
 
     

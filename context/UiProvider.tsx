@@ -11,7 +11,7 @@ interface Props{
 }
 const INITIAL_STATE:UIState={
     modal:'display-none',
-    search:'animate__fadeInLeft',
+    search:'display-none',
 }
 
 

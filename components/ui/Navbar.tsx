@@ -6,8 +6,6 @@ export const Navbar = () => {
 
   const {toggleSidebar, toggleSearch, search}=useContext(UiContext);
 
-  console.log(search);
-  
   const handleSearch=()=>{
     if(search === 'animate__fadeInRight') {
       return toggleSearch('animate__fadeOutRight')

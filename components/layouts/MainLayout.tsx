@@ -1,8 +1,9 @@
 import  Head  from 'next/head'
-import React, { FC } from 'react'
+import React, { FC, useContext, useEffect } from 'react'
 import { SidebarMenu } from '../ui';
 import { Footer } from '../ui/Footer';
 import { Navbar } from '../ui/Navbar';
+import { UiContext } from '../../context/ContextUi';
 
 interface Props{
   title:string,
@@ -12,6 +13,15 @@ interface Props{
 }
 
 export const MainLayout:FC<Props> = ({children, title, descripcion, imageUrl}) => {
+
+  const {toggleSearch, toggleSidebar} = useContext(UiContext);
+  
+  useEffect(() => {
+    toggleSidebar('display-none');
+    toggleSearch('display-none');
+  }, [])
+  
+
   return (
     <>
 

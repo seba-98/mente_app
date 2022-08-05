@@ -105,7 +105,7 @@ const Contact:NextPage = () => {
     const loadPage=()=>{
       setTimeout(()=>{
         setLoaded(true)
-      },2000)
+      },1200)
     }
     loadPage()
     

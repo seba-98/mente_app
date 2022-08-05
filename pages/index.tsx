@@ -14,11 +14,12 @@ const Home: NextPage = () => {
     const loadPage=()=>{
       setTimeout(()=>{
         setLoaded(true)
-      },2000)
+      },1200)
     }
     loadPage()
     
   }, [setLoaded])
+  
   
 
   if(!loaded)return(
