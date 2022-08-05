@@ -45,4 +45,5 @@ La app utiliza:
 ```
 ```
 - Las páginas web son la sección de bienvenida y la sección de contacto.
+- Los demás enlaces del sideBar son solo ilustrativos
 ```
